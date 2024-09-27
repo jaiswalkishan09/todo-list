@@ -2,7 +2,7 @@ import React from "react";
 
 function Dashbord() {
   return (
-    <div>
+    <div className="p-2 sm:p-0">
       <button className="flex gap-2 items-center pt-[7.75px] pb-[7.75px] pl-[17px] pr-[17px] border border-[#2B2B2B]  rounded-[9999px] text-white">
         Announcing Early Adopters Plan
         <svg
@@ -18,11 +18,11 @@ function Dashbord() {
           />
         </svg>
       </button>
-      <div className="pt-[24px] text-[60px] font-extrabold text-white">
-        <span> Master your day,</span>
+      <div className="flex flex-col text-xl pt-[24px] sm:text-[40px]  font-extrabold text-white">
+        <span className="pb-5">Master your day,</span>
         <span>effortlessly</span>
       </div>
-      <div className="pt-[10px] text-[16px] text-[#B8B8B8]">
+      <div className="pt-[30px] text-[16px] text-[#B8B8B8]">
         Our app helps you stay on top of your tasks and manage your time
         effectively so you can focus on what matters most
       </div>
