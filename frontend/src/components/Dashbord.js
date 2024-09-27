@@ -3,7 +3,7 @@ import React from "react";
 function Dashbord() {
   return (
     <div className="p-2 sm:p-0">
-      <button className="flex gap-2 items-center pt-[7.75px] pb-[7.75px] pl-[17px] pr-[17px] border border-[#2B2B2B]  rounded-[9999px] text-white">
+      <button className="flex gap-2 items-center pt-[7.75px] pb-[7.75px] pl-[17px] pr-[17px] border border-[#2B2B2B]  rounded-[9999px] text-white hover:text-gray-200 transition-colors">
         Announcing Early Adopters Plan
         <svg
           width="13"

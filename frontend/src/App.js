@@ -6,19 +6,17 @@ import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className=" h-screen bg-gradient-to-b from-[#09051b] to-[#261f42]">
-      <div className="sm:w-screen flex justify-center pt-[16px] bg-gradient-to-b from-[#09051b] to-[#0a061d]">
+    <div className="min-h-screen bg-gradient-to-b from-[#09051b] to-[#261f42]">
+      <div className="flex justify-center pt-4 md:w-screen bg-gradient-to-b from-[#09051b] to-[#0a061d]">
         <Header />
       </div>
-      <div>
-        <div className="mt-4 sm:mt-[102px]  sm:ml-[100px] sm:mr-[110px]">
-          <div className="sm:grid sm:grid-cols-12 flex flex-wrap  gap-3">
-            <div className="sm:col-span-5">
-              <Dashbord />
-            </div>
-            <div className="sm:col-span-7">
-              <TodoList />
-            </div>
+      <div className="mt-4 md:mt-[102px] md:mx-[100px]">
+        <div className="flex flex-wrap gap-3 md:grid md:grid-cols-12">
+          <div className="md:col-span-5">
+            <Dashbord />
+          </div>
+          <div className="md:col-span-7">
+            <TodoList />
           </div>
         </div>
       </div>
