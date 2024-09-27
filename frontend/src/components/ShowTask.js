@@ -16,8 +16,8 @@ function ShowTask({ data, setTasks, tasks }) {
         `${process.env.REACT_APP_BACKEND_URL}/task/deleteTask`,
         requestOptions
       );
-      let json_res = await response.json();
-      if (response.status != 200) {
+      await response.json();
+      if (response.status !== 200) {
         alert("Something went wrong while deleting task. Please try again.");
       }
     } catch (e) {
