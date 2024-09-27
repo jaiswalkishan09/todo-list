@@ -79,7 +79,8 @@ const createTask = async (req, res) => {
         .then((data) => {
           databaseConnection ? databaseConnection.destroy() : null;
           return res.status(201).json({
-            message: "Task Created.",
+            id: data[0],
+            title,
           });
         })
         .catch((e) => {

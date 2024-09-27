@@ -7,7 +7,7 @@ const cors = require("cors");
 dotenv.config({ path: __dirname + "/.env" });
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 app.use("/task", taskRoutes);
 
